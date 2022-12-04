@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringAdmin/SpringAdmin.iml" filepath="$PROJECT_DIR$/SpringAdmin/SpringAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-ui/client-ui.iml" filepath="$PROJECT_DIR$/client-ui/client-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-commandes/mcommandes.iml" filepath="$PROJECT_DIR$/microservice-commandes/mcommandes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mcommerce-master.iml" filepath="$PROJECT_DIR$/.idea/mcommerce-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-paiement/mpaiement.iml" filepath="$PROJECT_DIR$/microservice-paiement/mpaiement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-produits/mproduits.iml" filepath="$PROJECT_DIR$/microservice-produits/mproduits.iml" />
+    </modules>
+  </component>
+</project>
