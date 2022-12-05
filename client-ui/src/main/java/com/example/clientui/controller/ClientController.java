@@ -104,4 +104,11 @@ public class ClientController {
 
         return ThreadLocalRandom.current().nextLong(1000000000000000L,9000000000000000L );
     }
+
+    @RequestMapping("/helloCommandes")
+    public String helloCommandes(Model model){
+        String str = CommandesProxy.hello();
+        model.addAttribute("hello", str);
+        return "Hello";
+    }
 }

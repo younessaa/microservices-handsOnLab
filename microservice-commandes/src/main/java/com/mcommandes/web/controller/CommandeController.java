@@ -33,9 +33,15 @@ public class CommandeController {
     @GetMapping(value = "/commandes/{id}")
     public ResponseEntity<?> recupererUneCommande(@PathVariable int id){
 
-//        Optional<Commande> commande = commandesDao.findById(id);
-//
-//        if(!commande.isPresent()) throw new CommandeNotFoundException("Cette commande n'existe pas");
+        Optional<Commande> commande = commandesDao.findById(id);
+
+        if(!commande.isPresent()) throw new CommandeNotFoundException("Cette commande n'existe pas");
+
+        return ResponseEntity.ok().body("hello");
+    }
+
+    @GetMapping(value = "/hello")
+    public ResponseEntity<String> hello(){
 
         return ResponseEntity.ok().body("hello");
     }

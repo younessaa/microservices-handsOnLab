@@ -1,0 +1,24 @@
+resilience4j:
+  circuitbreaker:
+    instances:
+      circuitBreaker:   # Name of the CircuitBreaker
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true   # Allow transition from Open to HalfOpen
+        failureRateThreshold: 50    # Configures the failure rate threshold in percentage.
+        minimumNumberOfCalls: 5    # Configures the minimum number of calls which are required before the CircuitBreaker can calculate the error rate or slow call rate.
+        permittedNumberOfCallsInHalfOpenState: 3   # Number of calls in the HalfOpenState
+        slidingWindowSize: 10
+        waitDurationInOpenState: 5s   # The time that the CircuitBreaker should wait before transitioning from open to half-open.
+        slidingWindowType: COUNT_BASED
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
