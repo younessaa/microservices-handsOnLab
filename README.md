@@ -1,7 +1,7 @@
 # microservices-handsOnLab
 
 # master branch
-in this branch we have each microservices repo with thier dockerfile and cofiguration.yml
+code source with deployment files (dockerfile and cofiguration.yml) for each services
 
 # beforeDeplo branch
 code source before deployment 
