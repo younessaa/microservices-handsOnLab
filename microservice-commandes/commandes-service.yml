@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: commandes-deplo
+  labels:
+    app: commandes-deplo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: commandes-deplo
+  template:
+    metadata:
+      labels:
+        app: commandes-deplo
+    spec:
+      containers:
+        - name: commandes-deplo
+          image: younessaabaoui/commandes-service:0.0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9002
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: commandes-service
+spec:
+  ports:
+    - targetPort: 9002
+      port: 80
+  selector:
+    app: commandes-deplo

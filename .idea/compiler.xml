@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServer" />
+        <module name="config-server" />
+        <module name="gateway-service" />
+        <module name="client-ui" />
+        <module name="mproduits" />
+        <module name="client" />
+        <module name="mpaiement" />
+        <module name="mcommandes" />
+        <module name="SpringAdmin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="client-ui" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="EurekaServer" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="mcommandes" target="1.8" />
+      <module name="mpaiement" target="1.8" />
+      <module name="mproduits" target="1.8" />
+      <module name="SpringAdmin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EurekaServer" options="-parameters" />
+      <module name="SpringAdmin" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="client-ui" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="mcommandes" options="-parameters" />
+      <module name="mpaiement" options="-parameters" />
+      <module name="mproduits" options="-parameters" />
+    </option>
+  </component>
+</project>
